@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOUDOU LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dragula.css">
+</head>
+<body>
+    <section id="contenedor">
+        <div>
+            <h1>Cosas a hacer</h1>
+            <ul id="Pediente">
+                <li>Beber cerveza</li>
+                <li>Comer una vaca</li>
+                <li>Transisionar españa a una republica communista </li>
+            </ul>
+        </div>
+        
+        <div>
+            <h1>Cosas en progresso</h1>
+            <ul id="progresso">
+                <li>Beber cerveza</li>
+                <li>Comer una vaca</li>
+                <li>Aprender como descargar age of empires 1 illegalmente</li>
+                <li>Aprender Basco</li>
+            </ul>
+        </div>
+
+        <div>
+            <h1>Cosas terminado</h1>
+            <ul id="terminado">
+                <li>Beber cerveza</li>
+                <li>Comer una vaca</li>
+                <li>Reorganizar la republica en el segundo imperio galactico</li>
+                <li>Coger Majiuana en el norte de marruecos</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="\dragula.js"></script>
+    <script>
+        dragula([
+        document.querySelector('#Pediente'), 
+        document.querySelector('#progresso'),
+        document.querySelector('#terminado')
+        ]);
+    </script>
+</body>
+</html>
